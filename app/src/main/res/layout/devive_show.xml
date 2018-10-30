@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameDV"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/imgState"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textID"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/nameDV"
+        android:layout_below="@+id/nameDV"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imgState"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@null" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/setupSchedule"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/nameDV"
+        android:src="@drawable/schedule" />
+
+    <ImageView
+        android:id="@+id/imgManual"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:padding="5dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/setupSchedule"
+        android:src="@drawable/manual" />
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgManual"
+        android:src="@drawable/menu_50" />
+
+
+</RelativeLayout>
